@@ -1,0 +1,177 @@
+/*  for all browsers */
+
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+/* the header */
+
+.header .row{
+    display: flex;
+	overflow:hidden;
+    max-width: 100%;
+}
+
+
+
+header .col-6:nth-child(2) {
+    flex-grow: 7;
+    text-align: right;
+	flex-direction: column;
+    font-weight: bold;
+	display: flex;
+    color: #00f;
+}
+
+
+
+.header {
+    padding: 15px;
+}
+
+
+header .about-us h2 {
+    font-size: 35px;
+    margin-top: -3px;
+    color: #00f;
+	font-weight: lighter;
+}
+
+
+header .col-6:nth-child(1) {
+    flex-grow: 3;
+}
+
+
+header .logo img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*  picture */
+.picture .row{
+    display: flex;
+}
+
+
+.picture {
+    padding: 20px;
+}
+
+.picture .col-12{
+    flex-grow: 1;
+}
+
+
+.picture .row .col-12 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/*  Portfolio */
+
+
+
+.portfolio .row{
+    display: flex;
+    max-width: 100%;
+}
+
+
+.portfolio .our-work {
+    width: 32%;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+
+.portfolio .our-work:not(:last-child) {
+    margin-right: 2%;
+}
+
+
+.portfolio .our-work img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+	margin:auto;
+}
+
+
+.portfolio h1 {
+	font-weight: lighter;
+    color: #f00;
+}
+
+
+.portfolio .our-work .pic-name {
+    color: #000;
+    font-size: 30px;
+	margin:auto;
+}
+
+
+.portfolio .our-work .link {
+    color:#f00;
+	display:block;
+	text-decoration:none;
+	margin:auto;
+}
+
+
+.content {
+    margin: auto;
+    max-width: 100%;
+}
+/*  for responsive */
+
+@media (max-width: 767px) {
+    .portfolio .row
+    {
+        display:grid;
+    }
+    .portfolio .col-4 {
+        width: 100% ;
+        margin-bottom: 10px;
+    }
+    .portfolio {
+        text-align: center;
+    }
+    .portfolio .col-4 img{
+		height:auto;
+		flex-wrap: wrap;
+		 margin:auto;
+    }
+	.portfolio .our-work .link {
+		margin:auto;
+	}
+    .portfolio .col-4:not(:last-child) {
+	margin-right: 0px;
+    }
+}
+
+@media (min-width:992px) {
+    .content {
+        width: 1000px;
+    }
+}
+@media (min-width:768px) {
+    .content {
+        width: 780px;
+    }
+}
+@media (min-width:1200px)
+{
+    .content {
+        width: 1200px;
+    }
+}
+
+
+
